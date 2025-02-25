@@ -1,0 +1,13 @@
+<h1>Contact</h1>
+
+<% contacts = Contact.all %>
+
+<p>There are <%= contacts.count%> contacts available to view:</p>
+
+<ul>
+  <%for contact in contacts%>
+  <li>
+    <%= contact[:first_name]%>, <%= contact[:last_name]%>
+  </li>
+  <%end%>
+</ul>

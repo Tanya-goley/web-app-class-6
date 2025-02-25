@@ -5,12 +5,16 @@
   die2 =rand(1...6)%>
 
 <p>
-  Dice 1 shows <%= die1%>
-</p>
-<p>
-  Dice 2 shows <%= die2%>
+  <img src ="/images/dice/<%= die1%>.svg" alt ="">
+
+  <img src ="/images/dice/<%= die2%>.svg" alt ="">
+  
 </p>  
 
 <p>The total of Dice 1 and Dice 2 is <%= die1+die2%>
 </p>
+
+<p>
+  <a href="/dice">Roll again</a>
+  </p>
 </body>
